@@ -4,6 +4,7 @@ metadata:
   name: web-app
   labels:
     app: web-app
+  namespace: test
 spec:
   replicas: 3
   selector:
@@ -39,6 +40,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: web-app
+  namespace: test
 spec:
   selector:
     app: web-app
